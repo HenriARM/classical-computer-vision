@@ -1,2 +1,28 @@
-# graphics
-Solving Graphics tasks
+# TODO
+
+1. create folders images and models
+
+pyenv installed in ~/.pyenv
+all python versions installed into ~/.pyenv/versions
+check bash_profile, since all python aliases and paths are there
+
+for now when calling python 3.7 and its inside installed pip, just write "python" and "pip"
+
+=======
+
+* create python environment 
+ ```bash
+python -m venv env
+pyenv virtualenv 
+TODO: write correct function
+ ```
+
+pip freeze # to print all installed libraries, there ones which were needed for other library also printed
+
+
+Useful links
+Used for running multiple Python in MacOS https://github.com/pyenv/pyenv
+How to work with virtual envs in Python https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+ ~/.ssh/config file
+
