@@ -32,7 +32,7 @@ for ch in range(chs):
     # take one channel of image
     channel = img[:, :, ch]
     # create coordinates for all points
-    x, y = np.meshgrid(range(channel.shape[0]), range(channel.shape[1]))
+    y, x = np.meshgrid(range(channel.shape[0]), range(channel.shape[1]))
 
     # color
     if chs == 1:
