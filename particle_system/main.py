@@ -36,7 +36,7 @@ def main():
 
     # load and compile OpenCL program
     compilerSettings = f'-DWINDOW_SIZE={WINDOW_SIZE}'
-    program = cl.Program(context, open('kernel.cl').read()).build(compilerSettings)
+    program = cl.Program(context, open('particle_system/kernel.cl').read()).build(compilerSettings)
     init_particles = cl.Kernel(program, 'init_particles')
     update_particles = cl.Kernel(program, 'update_particles')
     clear_canvas = cl.Kernel(program, 'clear_canvas')
