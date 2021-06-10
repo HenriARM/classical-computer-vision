@@ -1,28 +1,29 @@
-# TODO
+# Requirements
+```bash
+# create conda env
+conda create --name=graphics python=3.6
+source activate graphics 
+```
 
-1. create folders images and models
+# Tasks
+* Image color histogram `color-histogram.py`
+```bash
+pip install opencv-python
+pip install matplotlib
+```
 
-pyenv installed in ~/.pyenv
-all python versions installed into ~/.pyenv/versions
-check bash_profile, since all python aliases and paths are there
+* Fractal tree `fractal_tree.py`
+![](animations/fractal_tree.gif)
 
-for now when calling python 3.7 and its inside installed pip, just write "python" and "pip"
-
-=======
-
-* create python environment 
- ```bash
-python -m venv env
-pyenv virtualenv 
-TODO: write correct function
- ```
-
-pip freeze # to print all installed libraries, there ones which were needed for other library also printed
+* Particle System (Spring Forces) for rendering fountain using OpenCL, folder `particle_system`
+```bash
+pip install opencv-python
+pip install numpy
+pip install pyopencl
+```
+![](animations/particle_system.gif)
 
 
-Useful links
-Used for running multiple Python in MacOS https://github.com/pyenv/pyenv
-How to work with virtual envs in Python https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
- ~/.ssh/config file
+
 
