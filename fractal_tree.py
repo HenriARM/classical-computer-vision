@@ -1,3 +1,7 @@
+"""
+Draw a fractal tree
+"""
+
 # turtle is in python standard library
 import turtle
 
