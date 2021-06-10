@@ -1,6 +1,5 @@
 import os
 import random
-import argparse
 import cv2
 import numpy as np
 import pyopencl as cl
@@ -10,6 +9,8 @@ COLOR_CHANNELS = 4  # RGBA
 COLOR_CHANNEL_SIZE = 4  # we need int32 to perform atomic operations for multiple particles at same position)
 PARTICLES_NUM = 400
 PARTICLE_STRUCT_SIZE = 32  # sizeof(struct Particle)
+
+KERNEL_PATH = './kernel.cl'
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
 
     # load and compile OpenCL program
     compilerSettings = f'-DWINDOW_SIZE={WINDOW_SIZE}'
-    program = cl.Program(context, open('particle_system/kernel.cl').read()).build(compilerSettings)
+    program = cl.Program(context, open(KERNEL_PATH).read()).build(compilerSettings)
     init_particles = cl.Kernel(program, 'init_particles')
     update_particles = cl.Kernel(program, 'update_particles')
     clear_canvas = cl.Kernel(program, 'clear_canvas')
