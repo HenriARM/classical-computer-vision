@@ -23,6 +23,14 @@ pip install pyopencl
 ```
 ![](animations/particle_system.gif)
 
+* Histogram equalization
+```bash
+pip install opencv-python
+pip install numpy
+pip install matplotlib
+```
+![](histogram_equalization.png)
+
 
 
 
