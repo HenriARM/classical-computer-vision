@@ -6,6 +6,13 @@ source activate graphics
 ```
 
 # Tasks
+* Rainbow Synthesis
+```bash
+pip install opencv-python
+pip install numpy
+```
+![](rainbow.png)
+
 * Custom convolution with sharpen and blur kernels `custom_convolution.py`
 ```bash
 pip install opencv-python
