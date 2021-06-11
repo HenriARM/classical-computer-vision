@@ -6,7 +6,17 @@ source activate graphics
 ```
 
 # Tasks
-* Image color histogram `color-histogram.py`
+* Custom convolution with sharpen and blur kernels `custom_convolution.py`
+```bash
+pip install opencv-python
+pip install matplotlib
+pip install numpy
+```
+![](sharpen_conv.png)
+![](blur_conv.png)
+
+
+* Image color histogram `color_histogram.py`
 ```bash
 pip install opencv-python
 pip install matplotlib
